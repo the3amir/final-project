@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="card">
+    <a id="paint" href="{{ url_for('paint') }}" class="btn btn-outline-warning" style="right: 25%;">
+      <div id="button" class="badge text-wrap">
+        الصبغ
+      </div>
+    </a>
+    </div>
+    <div class="card">
+      <a id="finish" href="{{ url_for('finish') }}" class="btn btn-outline-warning" style="right: 38%;">
+        <div id="button" class="badge text-wrap">
+          الانهاءات
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a id="wall" href="{{ url_for('wall') }}" class="btn btn-outline-warning" style="right: 51%;">
+        <div id="button" class="badge text-wrap" >
+          الجدران والارضيات
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a id="cutters" href="{{ url_for('cutters') }}" class="btn btn-outline-warning" style="right: 64%;">
+        <div id="button" class="badge text-wrap" >
+          القواطع الداخلية
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a id="door" href="{{ url_for('door') }}" class="btn btn-outline-warning" style="right: 25%;">
+        <div id="button" class="badge text-wrap" >
+          الأبواب و الشبابيك
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a id="kitchen" href="{{ url_for('kitchen') }}" class="btn btn-outline-warning" style="right: 38%;">
+        <div id="button" class="badge text-wrap" >
+          المطابخ و التخزين
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a id="bathrooms" href="{{ url_for('bathrooms') }}" class="btn btn-outline-warning" style="right: 51%;">
+        <div id="button" class="badge text-wrap" >
+          الصحيات
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a id="electricals" href="{{ url_for('electricals') }}" class="btn btn-outline-warning" style="right: 64%;">
+        <div id="button" class="badge text-wrap" >
+          الكهربائيات
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a id="construction" href="{{ url_for('construction') }}" class="btn btn-outline-warning" style="right: 25%;">
+        <div id="button" class="badge text-wrap" >
+          المقاولات العامة
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a id="supervisor" href="{{ url_for('supervisor') }}" class="btn btn-outline-warning" style="right: 38%;">
+        <div id="button" class="badge text-wrap" >
+          الاشراف الهندسي
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a id="internal" href="{{ url_for('internal') }}" class="btn btn-outline-warning" style="right: 51%;">
+        <div id="button" class="badge text-wrap" >
+          التصميم الداخلي
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a id="buildings" href="{{ url_for('buildings') }}" class="btn btn-outline-warning" style="right: 64%;">
+        <div id="button" class="badge text-wrap" >
+          تصميم المباني
+        </div>
+      </a>
+    </div>
+
+    {% endblock content %}
