@@ -4,9 +4,9 @@
 
 body {
   font-family: 'Almarai', sans-serif;
-  background-image: url(#);
-  background-position: 0px -17px;
-  background-size: 108% 150px;
+  background-image: url(img/bk.gif);
+  background-position: 0px -340px;
+  background-size: 100% 85%;
   background-repeat: no-repeat;
   background-attachment: absolute;
 }
@@ -58,7 +58,7 @@ li {
 
 li a {
   font-size: 20px;
-  color: #17a3b8;
+  color: #ffffff;
   display: block;
   text-align: center;
   padding: 10px 16px;
@@ -66,8 +66,8 @@ li a {
 }
 
 li a:hover:not(.active) {
-  font-size: 23px;
-  color: #696969;
+  font-size: 21px;
+  color: #17a3b8;
 }
 #d {
   text-align: right;
@@ -184,7 +184,7 @@ li a:hover:not(.active) {
   margin-bottom: 20px;
 }
 #b{
-  color: #231F20;
+  color: #ffffff;
   text-align: center;
   font-size: 1.5rem;
   border-radius: 30px;
