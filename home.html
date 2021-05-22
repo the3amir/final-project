@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0f01aca31a.js" crossorigin="anonymous"></script>
+    <title>home</title>
+</head>
+<body>
+    <div class="navbar" id="myTopnav">
+        <a id="brand" href="#home"><img src={img} ></a>
+        <ul id="navUl">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><div class="dropdown">
+            <button class="dropbtn">الاقسام  
+                <i class="fas fa-caret-down" id="deopIcon"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div></li>
+        <li><a href="#Photo Gallery">الدورات</a></li>
+        <li><a href="#info">من نحن</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </ul>
+    </div>
+    <div id="home-img">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_graufke1.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>
+        <h1 id="home-text">مرحبا بكم في موقعنا المختص في مساعدتك في ايجاد الدورات</h1>
+    </div>
+    <div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <div>
+                <div class="BlogCard">
+                    <div class="BlogCardCont">
+                        <p id="BlogTitle">هنا عنوان النقالة</p>
+                        <p>بواسطة : المكتب التقني للديكور</p>
+                        <p>يمتاز تصميم الديكور الداخلي لغرفة المعيشة شيء مهم في استغلال <br></br>....المساحات الداخلي</p>
+                        <button id="BlogButton" href="#">انتقل الى المقالة</button>
+                    </div>
+                    <div id="BlogImgGird"><img src={BlogImg} id="BlogImg"/ ></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <div class="BlogCard">
+                <div class="BlogCardCont">
+                    <p id="BlogTitle">هنا عنوان النقالة</p>
+                    <p>بواسطة : المكتب التقني للديكور</p>
+                    <p>يمتاز تصميم الديكور الداخلي لغرفة المعيشة شيء مهم في استغلال <br></br>....المساحات الداخلي</p>
+                    <button id="BlogButton" href="#">انتقل الى المقالة</button>
+                </div>
+                <div id="BlogImgGird"><img src={BlogImg} id="BlogImg"/ ></div>
+            </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <div class="BlogCard">
+                <div class="BlogCardCont">
+                    <p id="BlogTitle">هنا عنوان النقالة</p>
+                    <p>بواسطة : المكتب التقني للديكور</p>
+                    <p>يمتاز تصميم الديكور الداخلي لغرفة المعيشة شيء مهم في استغلال <br></br>....المساحات الداخلي</p>
+                    <button id="BlogButton" href="#">انتقل الى المقالة</button>
+                </div>
+                <div id="BlogImgGird"><img src={BlogImg} id="BlogImg"/ ></div>
+            </div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div> 
+    </div>
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
+</script>
+</body>
+</html>
