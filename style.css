@@ -362,7 +362,7 @@ display: block;
   margin-top: 30px;
 }
 .sectionsGrid {
-  width: 1010px;
+  width: 1088px;
   display: grid;
   grid-template-columns: 50% 50%;
   margin: auto;
@@ -373,8 +373,8 @@ display: block;
   background-color: #2E436D;
   border-radius: 20px;
   margin: 10px;
-  width: 480px;
-  height: 430px;
+  width: 523px;
+  height: 245px;
 }
 
 #Horizontal {
@@ -382,8 +382,8 @@ display: block;
   background-color: #2E436D;
   border-radius: 20px;
   margin: 10px;
-  width: 230px;
-  height: 430px;
+  width: 250px;
+  height: 490px;
 }
 #Vertical:hover , #Horizontal:hover{
   background-color: #ffcb04;
