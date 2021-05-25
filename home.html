@@ -7,26 +7,8 @@
     <title>home</title>
 </head>
 <body>
-    <div class="navbar" id="myTopnav">
-        <a id="brand" href="#home"><img src={img} ></a>
-        <ul id="navUl">
-        <li><a href="#home">الرئيسية</a></li>
-        <li><div class="dropdown">
-            <button class="dropbtn">الاقسام  
-                <i class="fas fa-caret-down" id="deopIcon"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div></li>
-        <li><a href="#Photo Gallery">الدورات</a></li>
-        <li><a href="#info">من نحن</a></li>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        </ul>
+    <div>
+        <iframe src="navbar.html" id="nav"></iframe>
     </div>
     <div id="home-img">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -38,7 +20,6 @@
 
             <div class="mySlides fade">
               <div class="numbertext">1 / 3</div>
-              <div>
                 <div class="BlogCard">
                     <div class="BlogCardCont">
                         <p id="BlogTitle">هنا عنوان النقالة</p>
@@ -48,11 +29,10 @@
                     </div>
                     <div id="BlogImgGird"><img src={BlogImg} id="BlogImg"/ ></div>
                 </div>
-              </div>
             </div>
             
             <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
+            <div class="numbertext">2 / 3</div>
               <div class="BlogCard">
                 <div class="BlogCardCont">
                     <p id="BlogTitle">هنا عنوان النقالة</p>
@@ -61,11 +41,11 @@
                     <button id="BlogButton" href="#">انتقل الى المقالة</button>
                 </div>
                 <div id="BlogImgGird"><img src={BlogImg} id="BlogImg"/ ></div>
-            </div>
+               </div>
             </div>
             
             <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
+            <div class="numbertext">3 / 3</div>
               <div class="BlogCard">
                 <div class="BlogCardCont">
                     <p id="BlogTitle">هنا عنوان النقالة</p>
@@ -74,7 +54,7 @@
                     <button id="BlogButton" href="#">انتقل الى المقالة</button>
                 </div>
                 <div id="BlogImgGird"><img src={BlogImg} id="BlogImg"/ ></div>
-            </div>
+               </div>
             </div>
             
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -142,49 +122,9 @@
         </div>
     </div>
     <div>
-        <div class="gridFooter">
-            <div class="grid-item" id="logoGrid">
-                <img src={ blackLogo } id="footerLogo"/ >
-                <p id="slogen">تسهل لك حياتك</p>
-            </div>
-            <div class="grid-item">
-                <ul id="fotUl">
-                <li id="liItem"><a href="#home">الرئيسية</a></li>
-                <li id="liItem"><a href="#section">الاقسام</a></li>
-                <li id="liItem"><a href="#Article">الدورات</a></li>
-                <li id="liItem"><a href="#info">من نحن</a></li>
-                </ul>
-            </div>
-            <div class="grid-item">
-                <h2 id="h2">address</h2>
-                <p id="p">22, Lorem ipsum dolor, 
-                   consectetur adipiscing
-                </p>
-                <p id="p">(541) 754-3010</p>
-                <p id="p">info@hsdf.com</p>
-            </div>  
-            <div class="grid-item">
-                <div id="icon">
-                <i class="fab fa-facebook-square"></i> 
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-instagram-square"></i>
-                <i class="fas fa-phone-square"></i>
-                </div>
-            </div> 
-        </div>
+        <iframe src="footer.html" id="foot"></iframe>
     </div>
-
 <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "navbar") {
-            x.className += " responsive";
-        } else {
-            x.className = "navbar";
-        }
-    }
-
-
     var slideIndex = 1;
     showSlides(slideIndex);
 
