@@ -459,7 +459,7 @@ display: block;
     height: 300px;
     display: grid;
     grid-template-columns: 25% 23% 23% 23%;
-    background-color: #231F20;
+    background-color: #2c1d60;
 }
 .grid-item {
     margin: 20px 30px 30px 30px;
@@ -483,7 +483,7 @@ display: block;
     padding-top: 30px;
 }
 #logoGrid {
-    background-color: #ffcb04;
+    background-color: rgb(185, 185, 185);
     margin: 0px 0px 0px 0px;
     height: 300px;
 }
@@ -496,7 +496,7 @@ display: block;
     font-family: 'Almarai', sans-serif;
     padding-top: 60px;
     font-size: 30px;
-    color: white;
+    color:#2c1d60;
     text-align: center;
     margin: 50px 80px 0px 10px;
 }
@@ -507,7 +507,7 @@ display: block;
 #icon {
     font-size: 40px;
     margin: 100px 20px;
-    color: #ffcb04;
+    color: white;
     border-radius: 20px;
 }
 #icon i {
@@ -610,24 +610,47 @@ display: block;
 }
 .CompanyName {
     width: 120px;
-    height: 20px;
+    height: 30px;
     text-align: center;
     position: absolute;
-    background: #ffcb04;
+    background: #2c1d60;
     color: #ffffff;
     padding: 8px 15px;
     font-size: 18px;
     border-radius: 30px;
+    margin-top: 15px;
 }
 .CompanyName p{
-    font-size: 18px;
+    font-size: 20px;
     color:white;
     font-family: 'Almarai', sans-serif;
-    margin-block-start: 0px;
+    margin-block-start: 3px;
     margin-block-end: 0em;
     margin-inline-start: 28px;
     margin-inline-end: 0px;
 }
+.free {
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    background: #2c1d60;
+    color: #ffffff;
+    padding: 8px 15px;
+    font-size: 18px;
+    border-radius: 30px;
+    margin-top: -15px;
+}
+.free p{
+  font-size: 20px;
+    color:white;
+    font-family: 'Almarai', sans-serif;
+    margin-block-start: 3px;
+    margin-block-end: 0em;
+    margin-inline-start: 28px;
+    margin-inline-end: 0px;
+}
+
 #AccountPicture {
     margin-top: -25px;
     margin-left: -8px;
@@ -649,21 +672,21 @@ display: block;
 }
 
 #PhotoCard_title , #PhotoCard_date {
-    margin-block-start: 0em;
+    margin-block-start: 0.3em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     margin-right: 20px;
     text-align: right;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 #PhotoCard_title {
-    font-size: 25px;
+    font-size: 30px;
     color: white;
 }
 #PhotoCard_date {
     margin-right: 35px;
-    font-size: 15px;
+    font-size: 20px;
     color: white;
 }
 #PhotoRating{
