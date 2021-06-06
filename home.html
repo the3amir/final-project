@@ -8,7 +8,27 @@
 </head>
 <body>
     <div>
-        <iframe src="navbar.html" id="nav"></iframe>
+        <div class="navbar" id="myTopnav">
+            <a id="brand" href="#home"><img src={img} ></a>
+            <ul id="navUl">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><div class="dropdown">
+                <button class="dropbtn">الاقسام  
+                    <i class="fas fa-caret-down" id="deopIcon"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div></li>
+            <li><a href="#Photo Gallery">الدورات</a></li>
+            <li><a href="#info">من نحن</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </ul>
+        </div>
     </div>
     <div id="home-img">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -140,6 +160,16 @@
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
     }
+</script>
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
 </script>
 </body>
 </html>
