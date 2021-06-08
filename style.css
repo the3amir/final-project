@@ -30,7 +30,7 @@ body{
   overflow: hidden;
   font-family: 'Almarai', sans-serif;
   background-image: url(image/nav.PNG);
-  background-position-y: 100%;
+  background-position-y: 30%;
   background-size: 100%;
 }
 .navbar a {
@@ -581,6 +581,7 @@ display: block;
   grid-template-columns: 40% 60%;
   margin: auto;
   margin-left: 10%;
+  margin-top: -20px;
 }
 .grid p{
   text-align: right;
