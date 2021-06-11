@@ -691,7 +691,7 @@ display: block;
     float: right;
     font-size: 20px;
     color: white;
-    width: 365px;
+    width: 90%;
 }
 #PhotoRating{
     position: absolute;
@@ -707,7 +707,8 @@ display: block;
 
 
 .modal__content {
-  top: 60px;
+  top: 10%;
+  margin-bottom: 20px;
   border-radius: 20px;
   position: relative;
   width: 1200px;
