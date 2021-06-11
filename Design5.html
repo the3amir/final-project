@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0f01aca31a.js" crossorigin="anonymous"></script>
+    <title>home</title>
+</head>
+<body>
+<div>
+    <div class="navbar2" id="myTopnav" >
+        <a id="brand" href="home.html"><img src='./image/blacklogo.png' ></a>
+        <ul id="navUl">
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><div class="dropdown">
+            <button class="dropbtn" id="new">الاقسام  
+                <i class="fas fa-caret-down" id="deopIcon"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="it.html">تكنولوجيا المعلومات</a>
+                <a href="Languages.html">اللغات</a>
+                <a href="Design.html">تصميم وتصوير</a>
+                <a href="leadership.html">ريادة اعمال</a>
+                <a href="human.html">تنمية بشرية</a>
+                <a href="Sciences.html">العلوم الطبية</a>
+                <a href="Law.html">القانون</a>
+                <a href="chances.html">فرص</a>
+            </div>
+        </div></li>
+        <li><a href="all.html">الدورات</a></li>
+        <li><a href="#info">من نحن</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal__content">
+    <div class="modalGrid">
+        <img id="modalimg" src="./image/d5.jpg" />
+        <div>
+            <h1 style="text-align: center;"> التصميم الهندسي  </h1>
+            <h4 id="modaltext"> :اللغة</h4>
+            <p id="modaltext"> العربية </p>
+            <h4 id="modaltext">  :اسم الموقع  </h4>
+            <p id="modaltext">  ادراك  </p>
+            <h4 id="modaltext"> :شرح عن الدوره  </h4>
+            <p id="modaltext"> برنامج أوتوديسك ريفيت هو برنامج نمذجة معلومات المباني للمهندسين المعماريين ومهندسي تنسيق المواقع (اللاندسكيب) والمهندسين الإنشائيين والمهندسين الالكتروميكانيك ( MEP ) والمصممين والمقاولين.</p>
+            <a href="https://www.edraak.org/specialization/specialization/rd101-v1/"><button id="modalButton" >مشاهدة الدورة</button></a>
+        </div>
+    </div>
+</div>
+
+    
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+</div>
+</body>
