@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0f01aca31a.js" crossorigin="anonymous"></script>
+    <title>home</title>
+</head>
+<body>
+<div>
+    <div class="navbar2" id="myTopnav" >
+        <a id="brand" href="home.html"><img src='./image/blacklogo.png' ></a>
+        <ul id="navUl">
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><div class="dropdown">
+            <button class="dropbtn" id="new">الاقسام  
+                <i class="fas fa-caret-down" id="deopIcon"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="it.html">تكنولوجيا المعلومات</a>
+                <a href="Languages.html">اللغات</a>
+                <a href="Design.html">تصميم وتصوير</a>
+                <a href="leadership.html">ريادة اعمال</a>
+                <a href="human.html">تنمية بشرية</a>
+                <a href="Sciences.html">العلوم الطبية</a>
+                <a href="Law.html">القانون</a>
+                <a href="chances.html">فرص</a>
+            </div>
+        </div></li>
+        <li><a href="all.html">الدورات</a></li>
+        <li><a href="#info">من نحن</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal__content">
+    <div class="modalGrid">
+        <img id="modalimg" src="./image/h2.jpg" />
+        <div>
+            <h1 style="text-align: center;"> أهداف التنمية البشرية </h1>
+            <h4 id="modaltext"> :اللغة</h4>
+            <p id="modaltext"> العربية </p>
+            <h4 id="modaltext">  :اسم الموقع  </h4>
+            <p id="modaltext"> موضوع  </p>
+            <h4 id="modaltext"> :شرح عن الدوره  </h4>
+            <p id="modaltext"> في هذه الدوره يستطيع المشاركون اي يستنتجوا ماهي اهم الاهداف من التنمية البشرية وكيف يكون الانسان قادراً على تفجير قدراته وايضاً من هذه الاهداف يستطيع الانسان الذي يباشر بعمل جديد ان يتكيف معه بالصوره الصحيحة ويوفر المستوى المعيشي الائق وايضاً يدخل ايضاً في الصحة المجتمعية وغالبية نواحي الحياة </p>
+            <a href="https://mawdoo3.com/%D8%A3%D9%87%D8%AF%D8%A7%D9%81_%D8%A7%D9%84%D8%AA%D9%86%D9%85%D9%8A%D8%A9_%D8%A7%D9%84%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9" ><button id="modalButton" >مشاهدة الدورة</button></a>
+        </div>
+    </div>
+</div>
+<div>
+    <iframe src="footer.html" id="foot"></iframe>
+</div>
+    
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+</div>
+</body>
