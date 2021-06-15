@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0f01aca31a.js" crossorigin="anonymous"></script>
+    <title>home</title>
+</head>
+<body>
+<div>
+    <div class="navbar2" id="myTopnav" >
+        <a id="brand" href="home.html"><img src='./image/blacklogo.png' ></a>
+        <ul id="navUl">
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><div class="dropdown">
+            <button class="dropbtn" id="new">الاقسام  
+                <i class="fas fa-caret-down" id="deopIcon"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="it.html">تكنولوجيا المعلومات</a>
+                <a href="Languages.html">اللغات</a>
+                <a href="Design.html">تصميم وتصوير</a>
+                <a href="leadership.html">ريادة اعمال</a>
+                <a href="human.html">تنمية بشرية</a>
+                <a href="Sciences.html">  العلوم والاحياء الطبية</a>
+                <a href="Law.html">القانون</a>
+                <a href="chances.html">علم النفس</a>
+            </div>
+        </div></li>
+        <li><a href="all.html">الدورات</a></li>
+        <li><a href="#info">من نحن</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal__content">
+    <div class="modalGrid">
+        <img id="modalimg" src="./image/s6.jpg" />
+        <div>
+            <h1 style="text-align: center;"> مقدمة في علم باطن الأرض </h1>
+            <h4 id="modaltext"> :اللغة</h4>
+            <p id="modaltext"> العربية </p>
+            <h4 id="modaltext">  :اسم الموقع  </h4>
+            <p id="modaltext">  courses </p>
+            <h4 id="modaltext"> :شرح عن الدوره  </h4>
+            <p id="modaltext">
+                ومن هنا فإن هذه الدورة تم تصميمها على مستوى المبتدئين في علوم الأرض، مع التركيز على باطن الأرض، حيث سيتعلم الدارسون كيف يتم حساب درجة حرارة باطن الأرض، وكذا كيف يتم استنتاج المكونات الكيميائية له، من خلال مجموعة محدودة من أدوات الملاحظة بالإضافة إلى التجارب المعملية. كما سيتعرفون أيضاً على وضع المياه على الأرض في المراحل الأولى لتكونهاـ وذلك فيما بتعلق بالمشكلات البحثية المتقدمة. </p>
+            <a href="https://www.for9a.com/courses/%D8%AF%D9%88%D8%B1%D8%A9-%D8%A3%D9%88%D9%86%D9%84%D8%A7%D9%8A%D9%86-%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9-%D8%AA%D9%82%D8%AF%D9%85%D9%87%D8%A7-edX-%D9%85%D9%82%D8%AF%D9%85%D8%A9-%D9%81%D9%8A-%D8%B9%D9%84%D9%85-%D8%A8%D8%A7%D8%B7%D9%86-%D8%A7%D9%84%D8%A3%D8%B1%D8%B6" ><button id="modalButton" >مشاهدة الدورة</button></a>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="gridFooter">
+            <div class="grid-item" id="logoGrid">
+                <img src="./image/blacklogo.png" id="footerLogo"/ >
+                <p id="slogen">تسهل لك حياتك</p>
+            </div>
+            <div class="grid-item">
+                <ul id="fotUl">
+                <li id="liItem"><a href="home.html">الرئيسية</a></li>
+                <li id="liItem"><a href="#section">الاقسام</a></li>
+                <li id="liItem"><a href="all.html">الدورات</a></li>
+                <li id="liItem"><a href="#info">من نحن</a></li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h2 id="h2">address</h2>
+                <p id="p">22, Lorem ipsum dolor, 
+                   consectetur adipiscing
+                </p>
+                <p id="p">(541) 754-3010</p>
+                <p id="p">info@hsdf.com</p>
+            </div>  
+            <div class="grid-item">
+                <div id="icon">
+                <i class="fab fa-facebook-square"></i> 
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fas fa-phone-square"></i>
+                </div>
+            </div> 
+        </div>
+</div>
+    
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+</div>
+</body>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0f01aca31a.js" crossorigin="anonymous"></script>
+    <title>home</title>
+</head>
+<body>
+<div>
+    <div class="navbar2" id="myTopnav" >
+        <a id="brand" href="home.html"><img src='./image/blacklogo.png' ></a>
+        <ul id="navUl">
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><div class="dropdown">
+            <button class="dropbtn" id="new">الاقسام  
+                <i class="fas fa-caret-down" id="deopIcon"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="it.html">تكنولوجيا المعلومات</a>
+                <a href="Languages.html">اللغات</a>
+                <a href="Design.html">تصميم وتصوير</a>
+                <a href="leadership.html">ريادة اعمال</a>
+                <a href="human.html">تنمية بشرية</a>
+                <a href="Sciences.html">  العلوم والاحياء الطبية</a>
+                <a href="Law.html">القانون</a>
+                <a href="chances.html">علم النفس</a>
+            </div>
+        </div></li>
+        <li><a href="all.html">الدورات</a></li>
+        <li><a href="#info">من نحن</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal__content">
+    <div class="modalGrid">
+        <img id="modalimg" src="./image/c5.jpg" />
+        <div>
+            <h1 style="text-align: center;"> الخرائط الذهنية </h1>
+            <h4 id="modaltext"> :اللغة</h4>
+            <p id="modaltext"> العربية </p>
+            <h4 id="modaltext">  :اسم الموقع  </h4>
+            <p id="modaltext">  ادراك  </p>
+            <h4 id="modaltext"> :شرح عن الدوره  </h4>
+            <p id="modaltext"> تعّلم بساعة عن الخرائط الذهنية! مساق مجاني قصير وسريع مقدّم من إدراك يوضح مفهوم الخريطة الذهنية واستخداماتها وفوائدها وخطوات تطبيقها والتخطيط الذهني ومجالات التفكير والإبداع في هذا الشأن. يمكن الاستفادة من الخرائط في جميع مجالات الحياة، حيث أنها تساعدنا على تحسين الأداء من خلال استبدال الكلمات بالرسومات، مما يجعل أفكارنا منظمة ومختصَرة وشاملة وسهلة التذكر في نفس الوقت. صمم خريطة ذهنية معنا! </p>
+            <a href="https://www.edraak.org/course/course-v1:edraak+MM_MiMo01+Q4_2020/" ><button id="modalButton" >مشاهدة الدورة</button></a>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="gridFooter">
+            <div class="grid-item" id="logoGrid">
+                <img src="./image/blacklogo.png" id="footerLogo"/ >
+                <p id="slogen">تسهل لك حياتك</p>
+            </div>
+            <div class="grid-item">
+                <ul id="fotUl">
+                <li id="liItem"><a href="home.html">الرئيسية</a></li>
+                <li id="liItem"><a href="#section">الاقسام</a></li>
+                <li id="liItem"><a href="all.html">الدورات</a></li>
+                <li id="liItem"><a href="#info">من نحن</a></li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h2 id="h2">address</h2>
+                <p id="p">22, Lorem ipsum dolor, 
+                   consectetur adipiscing
+                </p>
+                <p id="p">(541) 754-3010</p>
+                <p id="p">info@hsdf.com</p>
+            </div>  
+            <div class="grid-item">
+                <div id="icon">
+                <i class="fab fa-facebook-square"></i> 
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fas fa-phone-square"></i>
+                </div>
+            </div> 
+        </div>
+</div>
+    
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+</div>
+</body>
