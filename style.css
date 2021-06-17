@@ -197,12 +197,12 @@ display: block;
 }
 }
 
-#home-img{
+#index-img{
   margin-top: -15px;
   display: grid;
 }
 
-#home-text{
+#index-text{
   margin-top: -45%;
   overflow: visible;
   z-index: 1000;
